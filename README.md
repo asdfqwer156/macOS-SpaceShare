@@ -4,13 +4,13 @@
 
 ## 한 줄 설치 (Apple Silicon, macOS 14+)
 
-기존 Vencord가 설치된 상태에서 Discord를 완전히 종료하고 터미널에서 실행하세요.
+Discord를 설치하고 한 번 실행한 뒤 완전히 종료하고 터미널에서 실행하세요. Vencord가 없으면 공식 설치기를 받아 설치를 시도합니다. macOS 권한에 막히면 공식 설치 안내를 표시합니다.
 
 ```sh
-curl -fsSL https://github.com/asdfqwer156/macOS-SpaceShare/releases/download/v0.1.0/bootstrap.sh | bash
+curl -fsSL https://github.com/asdfqwer156/macOS-SpaceShare/releases/download/v0.1.2/bootstrap.sh | bash
 ```
 
-Node·pnpm·Xcode 없이 설치합니다. 설치 후 표시되는 `macOS-SpaceShare Helper.app`을 Finder에서 열고 화면 기록 권한을 직접 허용하세요. Discord를 재시작하고 **설정 → Vencord → Plugins → macOS-SpaceShare**를 켭니다.
+Node·pnpm·Xcode 없이 설치합니다. 설치가 끝나면 보조 프로그램이 자동으로 열려 화면 기록 권한을 요청합니다. 표시되는 창에서 직접 허용하세요. 이미 거부한 경우 시스템 설정 안내를 따르세요. Discord를 재시작하고 **설정 → Vencord → Plugins → macOS-SpaceShare**를 켭니다.
 
 보조 프로그램은 창 목록과 미리보기를 로컬에서 가져옵니다. 선택 후 실제 방송은 Discord가 처리합니다. 화면 기록 권한은 화면 내용에 대한 접근을 허용합니다.
 
@@ -30,4 +30,4 @@ bash "$HOME/Library/Application Support/Vencord/macOS-SpaceShare/uninstall.comma
 
 ## 소스와 라이선스
 
-GPL-3.0-or-later. Release의 `macOS-SpaceShare-0.1.0-corresponding-source.zip`에 플러그인·Swift 보조 프로그램·설치 스크립트·대응 Vencord 소스를 포함합니다. 기반 Vencord 커밋: `ff5810de5ac334c912321d7528d6d923d28c2db5` (https://github.com/Vendicated/Vencord).
+GPL-3.0-or-later. Release의 `macOS-SpaceShare-0.1.2-corresponding-source.zip`에 플러그인·Swift 보조 프로그램·설치 스크립트·대응 Vencord 소스를 포함합니다. 기반 Vencord 커밋: `ff5810de5ac334c912321d7528d6d923d28c2db5` (https://github.com/Vendicated/Vencord).
